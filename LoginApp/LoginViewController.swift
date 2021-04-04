@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
         if userTextField.text != username || passwordTextField.text != password {
             showAlert(titleAlert: "Invalid login or password",
                       messageAlert: "Please, enter correct\nlogin and password")
+            passwordTextField.text = ""
             return
         }
         
@@ -39,14 +40,12 @@ class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
-    @IBAction func ForgotUsernameAlert() {
-        showAlert(titleAlert: "Oops!",
-                  messageAlert: "Your name is User")
-    }
-    
-    @IBAction func ForgotPassword() {
-        showAlert(titleAlert: "Oops!",
-                  messageAlert: "Your name is 1234")
+    @IBAction func forgotUsernamePassword(_ sender: UIButton) {
+        sender.tag == 1
+            ? showAlert(titleAlert: "Oops!",
+                        messageAlert: "Your name is \(username)")
+            : showAlert(titleAlert: "Oops!",
+                        messageAlert: "Your password is \(password)")
     }
     
     func showAlert(titleAlert: String, messageAlert: String) {

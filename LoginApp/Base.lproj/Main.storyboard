@@ -45,22 +45,22 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-XB-Ud6">
                                 <rect key="frame" x="57" y="571" width="276" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-2H-3C9">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-2H-3C9">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                         <state key="normal" title="Forgot User Name?">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="ForgotUsernameAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="EgG-zj-lFh"/>
+                                            <action selector="forgotUsernamePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GE4-PK-Nwp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9t-KA-4Ri">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9t-KA-4Ri">
                                         <rect key="frame" x="153" y="0.0" width="123" height="30"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="ForgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="rou-qo-Wfj"/>
+                                            <action selector="forgotUsernamePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yek-kH-LLG"/>
                                         </connections>
                                     </button>
                                 </subviews>
